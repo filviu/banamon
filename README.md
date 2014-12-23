@@ -1,7 +1,7 @@
 BanaMon
 =======
 
-Bana = BASH, Mon = monitor. A simple BASH script to monitor a remote nagios instance and run custom commands depending on status. I use it to control a (BlinkStick)[https://www.blinkstick.com/].
+Bana = BASH, Mon = monitor. A simple BASH script to monitor a remote nagios instance and run custom commands depending on status. I use it to control a [BlinkStick](https://www.blinkstick.com/).
 
 Usage
 =====
