@@ -2,6 +2,11 @@ BanaMon
 =======
 
 Bana = BASH, Mon = monitor. A simple BASH script to monitor a remote or local nagios instance and run custom commands depending on status. I use it to control a [BlinkStick](https://www.blinkstick.com/).
+  
+Personally I run it from cron on the same VM that's running nagios
+
+    * * * * * /usr/local/bin/banamon.sh -f /usr/local/nagios/var/status.dat >/dev/null 2>&1
+
 
 Usage
 =====
@@ -18,7 +23,7 @@ Options:
                 Nagios username
         -p, --password
                 Nagios password
-	-f, --status
-	        Path to nagios status file, this excludes remote url access"
+        -f, --status
+                Path to nagios status file, this excludes remote url access"
 
 ```
