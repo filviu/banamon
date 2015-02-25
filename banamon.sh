@@ -12,21 +12,21 @@ BLINKSTICK="/usr/local/bin/blinkstick"
 # state is the same
 
 function warning {
-	$BLINKSTICK --set-color yellow --morph --duration 2000
-	$BLINKSTICK --set-color yellow --pulse --duration 2000 --repeats 1
-	$BLINKSTICK --set-color yellow
+	$BLINKSTICK --set-color black  --morph --duration 1000
+	$BLINKSTICK --set-color yellow --pulse --duration 1000 --repeats 2
+	$BLINKSTICK --set-color yellow --morph --duration 1000
 }
 
 function critical {
-	$BLINKSTICK --set-color red --morph --duration 2000
-	$BLINKSTICK --set-color red --pulse --duration 2000 --repeats 1
-	$BLINKSTICK --set-color red
+	$BLINKSTICK --set-color black --morph --duration 1000
+	$BLINKSTICK --set-color red --pulse --duration 1000 --repeats 2
+	$BLINKSTICK --set-color red --morph --duration 1000
 }
 
 function ok {
-	$BLINKSTICK --set-color blue --morph --duration 2000
-	$BLINKSTICK --set-color blue --pulse --duration 2000 --repeats 1
-	$BLINKSTICK --set-color blue
+	$BLINKSTICK --set-color black --morph --duration 1000
+	$BLINKSTICK --set-color blue --pulse --duration 1000 --repeats 2
+	$BLINKSTICK --set-color blue --morph --duration 1000
 }
 function usage {
 echo "Usage: banamon.sh -u nagios -p password -u http://www.example.com/nagios/cgi-bin/status.cgi"
