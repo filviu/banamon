@@ -1,0 +1,6 @@
+#!/bin/bash
+# wrapper to run blinkstick on a remote machine
+ssh some.machine.com  bash -c "'
+	pkill blinkstick
+	/usr/bin/blinkstick "$@"
+'"
